@@ -1,6 +1,10 @@
+HTM := $(patsubst %.md,%.html,$(wildcard *.md))
+
 mj := $("http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
 
-example.html : example.md
+all : $(HTM)
+
+%.html : %.md
 	pandoc $^ \
 	-t revealjs \
 	--slide-level 2 \
