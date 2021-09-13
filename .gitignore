@@ -1,8 +1,10 @@
 *
 
 !pandoc
+!pandoc/img/
 !pandoc/filters/
 !pandoc/templates/
+!pandoc/img/*.png
 !pandoc/templates/*.html
 !pandoc/filters/*.lua
 
