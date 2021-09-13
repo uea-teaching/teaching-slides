@@ -4,19 +4,23 @@ title: Example Slides
 ---
 
 # Foo
+
 ```python
 print("hello world")
 ```
 
 # Bar
-* test
-* test
+
+- test
+- test
 
 ## Getting up
 
 ::: incremental
+
 - Turn off alarm
 - Get out of bed
+
 :::
 
 ## Breakfast
@@ -59,11 +63,11 @@ This is my note.
 
 :::
 
-------
+---
 
 ### long code example {.allowframebreaks}
 
-``` {.jsx data-line-numbers="|4,8-11|17|22-24" data-id="code-animation"}
+```{.jsx data-line-numbers="|4,8-11|17|22-24" data-id="code-animation"}
 import React, { useState } from 'react';
 
 function Example() {
@@ -92,7 +96,8 @@ function SecondExample() {
   );
 }
 ```
-------
+
+---
 
 ## This slide has columns
 
@@ -108,7 +113,7 @@ right
 
 :::
 
-------
+---
 
 ::: columns
 
@@ -125,7 +130,7 @@ The image to the left is 600px wide.
 
 :::
 
-------
+---
 
 ::: columns
 
@@ -147,7 +152,7 @@ The image to the right is 400x553px.
 
 no image in beamer
 
-------
+---
 
 ::: columns
 
@@ -160,10 +165,31 @@ no image in beamer
 :::: column
 
 | **Item** | **Option** |
-|:---------|:----------:|
-| Item 1   | Option 1   |
-| Item 2   | Option 2   |
+| :------- | :--------: |
+| Item 1   |  Option 1  |
+| Item 2   |  Option 2  |
 
 ::::
 
 :::
+
+## Incremental
+
+Incremental list:
+
+::: incremental
+
+- Turn off alarm
+- Get out of bed
+- Eat eggs
+- Drink coffee
+
+:::
+
+## Video
+
+<video controls width="400px"
+data-src="assets/mov/Bog-AV-noise-m18dB-SNR.mp4">
+</video>
+
+This slide has a video that only shows in html output.
