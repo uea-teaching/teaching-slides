@@ -8,8 +8,10 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install panflute pandocfilters pantable
 RUN mkdir /src
 
-RUN mkdir /pandoc-data
-COPY pandoc/* /pandoc-data/
+RUN mkdir -p /root/.pandoc/templates /root/.pandoc/filters /img
+COPY pandoc/templates/* /root/.pandoc/templates/
+COPY pandoc/filters/* /root/.pandoc/filters/
+COPY pandoc/img/* /img/
 
 WORKDIR /src
 ENTRYPOINT [ "make" ]
