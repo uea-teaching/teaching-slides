@@ -1,20 +1,24 @@
 ---
-author: Dave Greenwood
-title: Example Slides
+title: Visual Speech
+subtitle: Audiovisual Processing CMP-6026A
+author: Dr. David Greenwood
+institution: University of East Anglia
+date: \today
+section-titles: false
 ---
 
-# Foo
+# Level1 Code
 
 ```python
 print("hello world")
 ```
 
-# Bar
+# Level 1 list
 
 - test
 - test
 
-## Getting up
+## Level 2 Incremental
 
 ::: incremental
 
@@ -23,28 +27,22 @@ print("hello world")
 
 :::
 
-## Breakfast
+## Level 2 list
 
 - Eat eggs
 - Drink coffee
 
-# In the evening
+# Level 1 Empty
 
-## Dinner
+## Level 2
 
-- Eat spaghetti
-- Drink wine
-
----
-
-![picture of trees](assets/kaung-myat-min-bCAOV2Sg7Es-unsplash.jpg)
+next slide has no header
 
 ---
 
-## Going to sleep
+![picture of trees - no heading](assets/kaung-myat-min-bCAOV2Sg7Es-unsplash.jpg)
 
-- Get in bed
-- Count sheep
+---
 
 ## Equations
 
