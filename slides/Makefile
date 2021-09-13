@@ -1,8 +1,9 @@
 HTM := $(patsubst %.md,%.html,$(wildcard *.md))
+BMR := $(patsubst %.md,%.bmr.pdf,$(wildcard *.md))
 
 mj := $("http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
 
-all : $(HTM)
+all : $(HTM) $(BMR)
 
 %.html : %.md
 	pandoc $^ \
@@ -10,9 +11,9 @@ all : $(HTM)
 	--slide-level 2 \
 	--standalone \
 	--mathjax $(mj) \
-	--template /pandoc-data/reveal-code.html \
+	--template reveal-code.html \
 	--css assets/style.css \
-	-L /pandoc-data/revealjs-codeblock.lua \
+	-L revealjs-codeblock.lua \
 	-V highlightjs \
 	-V highlightjs-theme=zenburn \
 	-V theme=blood \
@@ -22,5 +23,15 @@ all : $(HTM)
 	-V transition=none \
 	-o $@
 
+%.bmr.pdf : %.md
+	pandoc $^ \
+	-t beamer \
+	--slide-level 2 \
+	--dpi=96 \
+	-L beamer-noincrement.lua \
+	-L beamer-media-replace.lua \
+	-o $@
+
 clobber : 
 	rm -f $(HTM)
+	rm -f $(BMR)
