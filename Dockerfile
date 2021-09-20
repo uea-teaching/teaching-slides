@@ -6,11 +6,15 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install panflute pandocfilters pantable
-RUN mkdir /src
 
-RUN mkdir -p /root/.pandoc/templates /root/.pandoc/filters /img
+RUN mkdir -p /src /img \
+    /root/.pandoc/templates \
+    /root/.pandoc/filters \
+    /root/.pandoc/defaults
+
 COPY pandoc/templates/* /root/.pandoc/templates/
 COPY pandoc/filters/* /root/.pandoc/filters/
+COPY pandoc/defaults/* /root/.pandoc/defaults/
 COPY pandoc/img/* /img/
 
 WORKDIR /src

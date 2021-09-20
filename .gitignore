@@ -7,6 +7,9 @@
 !pandoc/img/*.png
 !pandoc/templates/*.html
 !pandoc/filters/*.lua
+!pandoc/defaults/
+!pandoc/defaults/*.yaml
+!pandoc/defaults/*.tex
 
 !slides
 !slides/assets/

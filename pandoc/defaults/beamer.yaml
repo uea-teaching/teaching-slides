@@ -1,0 +1,15 @@
+to: beamer
+incremental: false
+slide-level: 2
+dpi: 96
+filters:
+  - beamer-media-replace.lua
+  - beamer-noincrement.lua
+metadata:
+  institute:
+    - david.greenwood@uea.ac.uk
+    - SCI 2.16a University of East Anglia
+variables:
+  colortheme: dove
+  section-titles: false
+include-in-header: ['${.}/beamer-header.tex']

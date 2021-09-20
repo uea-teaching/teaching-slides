@@ -1,0 +1,13 @@
+% Slide number in lower right
+\definecolor{gray}{RGB}{155,155,155}
+\setbeamertemplate{footline}{%
+    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+                \scriptsize\insertframenumber}}}\hspace*{5pt}}
+
+% Color and shape of bullets
+\setbeamercolor{item}{fg=gray}
+\setbeamercolor{subitem}{fg=gray}
+\setbeamertemplate{itemize item}{{\textendash}}
+\setbeamertemplate{itemize subitem}{{$\bullet$}}
+\setbeamerfont{itemize/enumerate subbody}{size=\small}
+\setbeamerfont{itemize/enumerate subitem}{size=\small}
