@@ -24,12 +24,8 @@ all : $(HTM) $(BMR)
 	-o $@
 
 %.bmr.pdf : %.md
-	pandoc $^ \
-	-t beamer \
-	--slide-level 2 \
-	--dpi=96 \
-	-L beamer-noincrement.lua \
-	-L beamer-media-replace.lua \
+	pandoc 	$^ \
+	--defaults beamer \
 	-o $@
 
 clobber : 

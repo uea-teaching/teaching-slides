@@ -1,10 +1,8 @@
 ---
-title: Visual Speech
-subtitle: Audiovisual Processing CMP-6026A
-author: Dr. David Greenwood
-institution: University of East Anglia
+title: Example Slides
+subtitle: Examples with Defaults
 date: \today
-section-titles: false
+author: Dr. David Greenwood
 ---
 
 # Level1 Code
@@ -18,19 +16,36 @@ print("hello world")
 - test
 - test
 
+## Inline code
+
+This is code:
+
+`print("hello world")`
+
 ## Level 2 Incremental
 
 ::: incremental
 
 - Turn off alarm
+  - Turn on alarm
 - Get out of bed
+  - Get in bed
 
 :::
 
 ## Level 2 list
 
-- Eat eggs
-- Drink coffee
+1. Eat eggs
+2. Drink coffee
+
+## Level 2 list
+
+1. Eat eggs
+   1. Drink coffee
+   2. Eat a cake
+2. Drink coffee
+   1. Eat a cake
+   2. Drink coffee
 
 # Level 1 Empty
 
@@ -63,25 +78,11 @@ This is my note.
 
 ---
 
-### long code example {.allowframebreaks}
-
-```{.jsx data-line-numbers="|4,8-11|17|22-24" data-id="code-animation"}
+```{.jsx data-line-numbers="|4,8-11|15" data-id="code-animation"}
+// long code
 import React, { useState } from 'react';
 
 function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
-
-function SecondExample() {
   const [count, setCount] = useState(0);
 
   return (
