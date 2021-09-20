@@ -1,26 +1,14 @@
 HTM := $(patsubst %.md,%.html,$(wildcard *.md))
 BMR := $(patsubst %.md,%.bmr.pdf,$(wildcard *.md))
 
-mj := $("http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
-
 all : $(HTM) $(BMR)
 
 %.html : %.md
 	pandoc $^ \
-	-t revealjs \
-	--slide-level 2 \
-	--standalone \
-	--mathjax $(mj) \
-	--template reveal-code.html \
+	--defaults revealjs \
 	--css assets/style.css \
-	-L revealjs-codeblock.lua \
-	-V highlightjs \
-	-V highlightjs-theme=zenburn \
-	-V theme=blood \
-	-V margin=0.2 \
+	-V theme=black \
 	-V slideNumber="'c/t'" \
-	-V center=false \
-	-V transition=none \
 	-o $@
 
 %.bmr.pdf : %.md

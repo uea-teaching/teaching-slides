@@ -1,0 +1,14 @@
+to: revealjs
+slide-level: 2
+standalone: true
+template: reveal-code.html
+html-math-method:
+  method: mathjax
+  url: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+filters:
+  - revealjs-codeblock.lua
+variables:
+  highlightjs: true
+  highlightjs-theme: zenburn
+  center: true
+  margin: 0.2
