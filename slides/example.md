@@ -149,7 +149,11 @@ The image to the right is 400x553px.
 
 ## {data-background-image="assets/kaung-myat-min-bCAOV2Sg7Es-unsplash.jpg"}
 
-no image in beamer
+::: {.r-fit-text style="color: white"}
+
+No image in beamer!
+
+:::
 
 ---
 
