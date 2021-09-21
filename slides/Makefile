@@ -7,15 +7,11 @@ all : $(HTM) $(BMR)
 	pandoc $^ \
 	--defaults revealjs \
 	--css assets/style.css \
+	-V highlightjs-theme=atom-one-dark \
 	-V theme=black \
-	-V slideNumber="'c/t'" \
 	-o $@
 
 %.bmr.pdf : %.md
 	pandoc 	$^ \
 	--defaults beamer \
 	-o $@
-
-clobber : 
-	rm -f $(HTM)
-	rm -f $(BMR)
