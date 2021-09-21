@@ -16,21 +16,21 @@ $endif$
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="$revealjs-url$/dist/reset.css">
-  <link rel="stylesheet" href="$revealjs-url$/dist/reveal.css">
+  <link rel="stylesheet" href="$revealjs-url$dist/reset.css">
+  <link rel="stylesheet" href="$revealjs-url$dist/reveal.css">
   <style>
     $styles.html()$
   </style>
 $if(theme)$
-  <link rel="stylesheet" href="$revealjs-url$/dist/theme/$theme$.css" id="theme">
+  <link rel="stylesheet" href="$revealjs-url$dist/theme/$theme$.css" id="theme">
 $else$
-  <link rel="stylesheet" href="$revealjs-url$/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="$revealjs-url$dist/theme/black.css" id="theme">
 $endif$
 $if(highlightjs)$
 $if(highlightjs-theme)$
-  <link rel="stylesheet" href="$revealjs-url$/plugin/highlight/$highlightjs-theme$.css">
+  <link rel="stylesheet" href="http://unpkg.com/@highlightjs/cdn-assets@11.2.0/styles/$highlightjs-theme$.min.css">
 $else$
-  <link rel="stylesheet" href="$revealjs-url$/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="$revealjs-url$plugin/highlight/monokai.css">
 $endif$
 $endif$
 $for(css)$
@@ -74,17 +74,17 @@ $body$
     </div>
   </div>
 
-  <script src="$revealjs-url$/dist/reveal.js"></script>
+  <script src="$revealjs-url$dist/reveal.js"></script>
 
   // reveal.js plugins
-  <script src="$revealjs-url$/plugin/notes/notes.js"></script>
-  <script src="$revealjs-url$/plugin/search/search.js"></script>
-  <script src="$revealjs-url$/plugin/zoom/zoom.js"></script>
+  <script src="$revealjs-url$plugin/notes/notes.js"></script>
+  <script src="$revealjs-url$plugin/search/search.js"></script>
+  <script src="$revealjs-url$plugin/zoom/zoom.js"></script>
 $if(mathjax)$
-  <script src="$revealjs-url$/plugin/math/math.js"></script>
+  <script src="$revealjs-url$plugin/math/math.js"></script>
 $endif$
 $if(highlightjs)$
-  <script src="$revealjs-url$/plugin/highlight/highlight.js"></script>
+  <script src="$revealjs-url$plugin/highlight/highlight.js"></script>
 $endif$
 
   <script>
@@ -116,7 +116,7 @@ $if(progress)$
 $endif$
 $if(slideNumber)$
         // Display the page number of the current slide
-        slideNumber: $slideNumber$,
+        slideNumber: '$slideNumber$',
 $endif$
 $if(hash)$
         // Add the current slide number to the URL hash so that reloading the
