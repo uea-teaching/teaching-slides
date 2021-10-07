@@ -3,6 +3,7 @@ incremental: false
 slide-level: 2
 dpi: 96
 filters:
+  - beamer-replace-video.lua
   - beamer-media-replace.lua
   - beamer-noincrement.lua
 metadata:
