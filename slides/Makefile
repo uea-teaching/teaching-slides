@@ -1,7 +1,8 @@
 HTM := $(patsubst %.md,%.html,$(wildcard *.md))
 BMR := $(patsubst %.md,%.bmr.pdf,$(wildcard *.md))
+PPT := $(patsubst %.md,%.pptx,$(wildcard *.md))
 
-all : $(HTM) $(BMR)
+all : $(HTM) $(BMR) $(PPT)
 
 %.html : %.md
 	pandoc $^ \
@@ -14,4 +15,12 @@ all : $(HTM) $(BMR)
 %.bmr.pdf : %.md
 	pandoc 	$^ \
 	--defaults beamer \
+	-o $@
+
+%.pptx : %.md
+	pandoc 	$^ \
+	-t pptx \
+	--slide-level 2 \
+	--lua-filter pptx-replace-video.lua \
+	-V monofont=Courier \
 	-o $@

@@ -167,6 +167,8 @@ No image in beamer!
 
 :::: column
 
+table
+
 | **Item** | **Option** |
 | :------- | :--------: |
 | Item 1   |  Option 1  |
@@ -192,7 +194,11 @@ Incremental list:
 ## Video
 
 <video controls width="400px"
-data-src="assets/mov/Bog-AV-noise-m18dB-SNR.mp4">
+data-src="assets/mri.mp4">
 </video>
 
 This slide has a video that only shows in html output.
+
+## Video
+
+![movie](assets/mri.mp4)
