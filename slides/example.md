@@ -55,7 +55,7 @@ next slide has no header
 
 ---
 
-![picture of trees - no heading](assets/kaung-myat-min-bCAOV2Sg7Es-unsplash.jpg)
+![picture of trees - no heading](assets/img3.jpg)
 
 ---
 
@@ -117,7 +117,7 @@ right
 ::: columns
 
 :::: column
-![book shelves](assets/janko-ferlic-sfL_QOnmy00-unsplash.jpg)
+![book shelves](assets/img2.jpg)
 ::::
 
 :::: column
@@ -140,14 +140,14 @@ The image to the right is 400x553px.
 ::::
 
 :::: column
-![book shelves](assets/angelo-mariano-m-e0jNg_jBuSw-unsplash.jpg)
+![book shelves](assets/img1.jpg)
 ::::
 
 :::
 
 ---
 
-## {data-background-image="assets/kaung-myat-min-bCAOV2Sg7Es-unsplash.jpg"}
+## {data-background-image="assets/img3.jpg"}
 
 ::: {.r-fit-text style="color: white"}
 
@@ -161,7 +161,7 @@ No image in beamer!
 
 :::: column
 
-![](assets/angelo-mariano-m-e0jNg_jBuSw-unsplash.jpg){height=90%}
+![](assets/img1.jpg){height=90%}
 
 ::::
 
