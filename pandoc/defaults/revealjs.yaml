@@ -4,7 +4,7 @@ standalone: true
 template: reveal-code.html
 html-math-method:
   method: mathjax
-  url: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+  url: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 filters:
   - revealjs-codeblock.lua
 variables:
