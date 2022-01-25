@@ -9,6 +9,4 @@ filters:
   - revealjs-codeblock.lua
 variables:
   highlightjs: true
-  center: true
-  margin: 0.2
   slideNumber: c/t
