@@ -3,11 +3,12 @@ FROM pandoc/ubuntu-latex:latest
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
+    libcairo2 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 --no-cache-dir install \
     panflute pandocfilters pantable \
-    numpy matplotlib Pillow
+    numpy matplotlib Pillow drawSvg
 
 RUN mkdir -p /src /img \
     /root/.pandoc/templates \
